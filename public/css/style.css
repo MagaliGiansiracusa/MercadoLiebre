@@ -58,6 +58,10 @@ header .burger-menu{
     width: 100%;
 }
 
+nav{
+    display: none;
+}
+
 nav ul{
     padding-left: 0px;
 }
@@ -74,6 +78,8 @@ nav a{
 
 .titulares{
     font-size: 24px;
+    font-weight: 400;
+    color: #666;
 }
 
 .precios{
@@ -85,7 +91,7 @@ nav a{
 }
 
 .descripciones{
-    font-size: 16 px;
+    font-size: 16px;
 }
 
 .consejo{
@@ -110,4 +116,82 @@ nav a{
 
 .consejo p{
     margin: 0px auto;
+}
+
+main {
+    width: 90vw;
+    margin: auto;
+
+}
+
+main ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+main ul li{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+main ul li img{
+    width: 100%;
+}
+
+.articulo{    
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+}
+
+.articulo i {
+    color: #39b54a;
+    font-size: 1.3em;
+    border: 2px solid #39b54a;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articulo .precios{
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.articulo .descuentos{
+    color: #39b54a;
+    margin: 0px;
+    margin-top: 7px;
+}
+
+.articulo .descripciones{
+    font-size: 16px;
+    margin: 0px;
+    margin-top: 15px;
+    color: #666;
+    display: none;
+}
+
+@media(min-width: 361px){
+    .articulo .descripciones{
+        display: block;
+    }
+
+    main ul li{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    nav{
+        display: block;
+    }
+
+    .burger-menu{
+        display: none;
+    }
 }
