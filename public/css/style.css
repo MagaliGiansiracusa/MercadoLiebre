@@ -1,11 +1,16 @@
 /*
-    Amarillo: #EAC926;
+    Amarillo: #EAC926;  
     Azul: #03264C;
     Celeste: #1259c3;
     Gris oscuro: #666;
     Gris claro: #ebebeb;
     Verde: #39b54a;
 */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
@@ -34,8 +39,36 @@ header form input, header form button{
 
 header .subtitulo{
     font-size: 15px;
-    font-weight: bold;
+    margin: 20px;
 }
+.link nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* font-weight: 300; */
+}
+
+.links{
+    display: flex;
+    justify-content: flex-start;
+
+
+}
+.links2{
+    display: flex;
+    justify-content: flex-end;
+
+}
+div.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+  header div.top-header p {
+    text-align: center;
+  }
 
 header .burger-menu{
     background-color: #1259c3;
@@ -76,6 +109,12 @@ nav a{
     font-weight: bold;
 }
 
+.articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
 .titulares{
     font-size: 24px;
     font-weight: 400;
@@ -84,10 +123,14 @@ nav a{
 
 .precios{
     font-size: 18px;
+    flex-contribution: 0.7;
 }
 
 .descuentos{
     font-size: 16px;
+    display: flexbox;
+    flex-wrap:wrap;
+    width: 70%;
 }
 
 .descripciones{
@@ -158,24 +201,40 @@ main ul li img{
     align-items: center;
 }
 
+
+}
 .articulo .precios{
     font-weight: bold;
     margin: 0px;
     margin-top: 10px;
 }
 
-.articulo .descuentos{
+.articulo .descuentos {
     color: #39b54a;
-    margin: 0px;
-    margin-top: 7px;
+    margin-left: 15px;
 }
-
-.articulo .descripciones{
+.articulo .descripciones {
     font-size: 16px;
     margin: 0px;
+    width: 400;
     margin-top: 15px;
     color: #666;
     display: none;
+    font-weight: 400;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    order: 1px solid #39b54a;
+     background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
 @media(min-width: 361px){
@@ -194,4 +253,17 @@ main ul li img{
     .burger-menu{
         display: none;
     }
+}
+
+.descuentosPrecios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+main div .articulo{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
 }

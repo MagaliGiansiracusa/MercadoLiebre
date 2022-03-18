@@ -10,3 +10,11 @@ app.listen(5000,()=>{
 app.get("/",(req,res)=>{
     res.sendFile(__dirname + "/views/home.html")
 })
+
+app.get("/", (req,res)=>{
+    res.sendFile(__dirname + "/views/login.html")
+})
+
+app.get("/", (req,res)=>{
+    res.sendFile(__dirname + "/views/register.html")
+})
