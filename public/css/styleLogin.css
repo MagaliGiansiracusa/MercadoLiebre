@@ -4,3 +4,51 @@
     box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.formulario{
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+}
+.usuario{
+    width: 400px;
+    background-color: white;
+    border: none;
+    flex-grow: 1;
+    font-size: 14px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 6px;
+    border-color: white;
+    padding: 8px;
+    align-items: center;
+    text-align: center;
+}
+
+.contraseña{
+    width: 400px;
+    background-color: white;
+    border: none;
+    flex-grow: 1;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 6px;
+    border-color: white;
+    padding: 8px;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.boton {
+    color: white;
+    width: 400px;
+    border: none;
+    flex-grow: 1;
+    font-size: 14px;
+    border-radius: 7px;
+    background-color:#1259c3;
+    padding: 6px;
+    margin-top: 25px;
+}

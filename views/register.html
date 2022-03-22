@@ -43,52 +43,51 @@
             <i class="fas fa-bars"></i>
         </div>
     </header>
-<form action="/register" method="POST">
+<form class="formulario" action="/register" method="POST">
+    <h3 class="enunciado">Formulario de registro a Mercado Liebre</h3>
     <p>
-        <label for="nombre">Nombre y apellido:</label>
-        <input type="text" name="nombre" id="nombre">
+        <input class="usuario" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
     </p>
     <p>
-        <label for="usuario">Nombre de usuario:</label>
-        <input type="text" name="usuario" id="usuario">
+        <input class="usuario" type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
     </p>
     <p>
-        <label for="nacimiento">Fecha de nacimiento:</label>
-        <input type="date" name="nacimiento" id="nacimiento">
+        <label class="texto" for="nacimiento">Fecha de nacimiento</label>
+        <input class="fecha-nacimiento" type="date" name="nacimiento" id="nacimiento" placeholder="Fecha de nacimiento">
     </p>
     <p>
-        <label for="domicilio">Domicilio:</label>
-        <input type="text" name="domicilio" id="domicilio">
+        <input class="usuario" type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
     </p>
-    <label for="perfil">Perfil del usuario</label>
-    <select name="Perfil">
+    <label class="texto" for="perfil">Perfil del usuario</label>
+    <select class="fecha-nacimiento" name="Perfil">
         <option value="vendedor">Vendedor</option>
         <option value="comprador">Comprador</option>
         <option value="ambos">Ambos</option>
     </select>
     <p>
-        <label for="interes">Categorías de interés</label>    
-            <input type="checkbox" name="interes" value="Electro">Electro 
-            <input type="checkbox" name="interes" value="Moda">Moda
-            <input type="checkbox" name="interes" value="Hogar">Hogar
-            <input type="checkbox" name="interes" value="Juguetería">Juguetería 
-            <input type="checkbox" name="interes" value="Vida sana">Vida sana
+        <label class="texto" for="interes">¿En qué está interesado?</label>
+            <section class="eleccion">    
+                <input class="box" type="checkbox" name="interes" value="Electro">Electro 
+                <input class="box" type="checkbox" name="interes" value="Moda">Moda
+                <input class="box" type="checkbox" name="interes" value="Hogar">Hogar
+                <input class="box" type="checkbox" name="interes" value="Juguetería">Juguetería 
+                <input class="box" type="checkbox" name="interes" value="Vida sana">Vida sana
+            </section>    
     </p>
     <p>
-        <label for="foto">Ingrese su foto de perfil</label>
+        <label class="texto" for="foto">Ingrese su foto de perfil</label>
         <input type="file" name="avatar" accept=".jpg" multiple>
     </p>
-    <p>
-        <label for="contraseña">Ingrese su contraseña</label>
-        <input type="password" name="contraseña">
+        <input class="fecha-nacimiento" type="password" name="contraseña" placeholder="Cree su contraseña">      
     </p>
     <p>
-        <label for="contraseñaConfirmada">Confirme su contraseña</label>
-        <input type="password" name="contraseña">
+        <input class="usuario" type="password" name="contraseña" placeholder="Confirme su contraseña">
     </p>
     <p>
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar</button>
+        <button class="boton" type="submit">Enviar</button>
+    </p>
+    <p>
+        <button class="boton" type="reset">Borrar</button>
     </p>
 </form>
 <footer>

@@ -43,17 +43,15 @@
             <i class="fas fa-bars"></i>
         </div>
     </header>
-    <form action="/login" method="POST">
-        <p>
-            <label for="usuario">Usuario:</label>
-            <input type="text" name="usuario" id="usuario">
+    <form class="formulario" action="/login" method="POST">
+        <p >
+            <input class="usuario" type="text" name="usuario" id="usuario" placeholder="Ingrese nombre de usuario">
         </p>
         <p>
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" name="contraseña">
+            <input class="contraseña" type="password" name="contraseña" placeholder="Ingrese contraseña">
         </p>
         <p>
-            <a href="/"><button>Enviar</button></a>
+            <a href="/"><button class="boton">Enviar</button></a>
         </p>
     </form>
     <footer>
