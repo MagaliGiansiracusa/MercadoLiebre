@@ -144,6 +144,7 @@ section{
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
+    align-items: flex-start;
 }
 .titulares{
     font-size: 24px;
@@ -164,6 +165,12 @@ section{
 
 .descripciones{
     font-size: 16px;
+}
+
+.consejos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .consejo{
@@ -240,13 +247,13 @@ main ul li img{
 }
 
 .articulo .descripciones {
+    transition: all .3s ease;
     font-size: 16px;
     margin: 0px;
-    width: 400;
-    margin-top: 15px;
     color: #666;
-    display: none;
+    height: 0px;
     font-weight: 400;
+    opacity: 0;
 }
 
 .descuentosPrecios {
@@ -267,13 +274,19 @@ main div .articulo{
 }
 
 @media(min-width: 361px){
-    .articulo .descripciones{
-        display: block;
+    main ul li{
+        width: 47%;
     }
 
-    main ul li{
+    main ul li:hover{
+        transition: all .3s ease;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 47%;
+    }
+
+    main ul li:hover .descripciones {
+        height: 19px;
+        margin-top: 15px;
+        opacity: 1;
     }
 
     nav{
@@ -290,5 +303,9 @@ main div .articulo{
 @media (min-width: 769px){
     main ul li{
         width: 23%;
+    }
+
+    .consejos{
+        flex-direction: row;
     }
 }

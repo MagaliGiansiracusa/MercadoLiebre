@@ -55,10 +55,15 @@
     background-color:#1259c3;
     padding: 6px;
     margin-top: 25px;
+    cursor: pointer;
 }
 
 .boton.borrar{
     margin-top: 10px;
+}
+
+.boton:hover{
+    background-color: #0022AA;
 }
 
 .texto{
