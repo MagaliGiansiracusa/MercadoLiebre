@@ -41,7 +41,11 @@ header .subtitulo{
     font-size: 15px;
     margin: 20px;
 }
-
+.logo-principal:hover{
+    transition: all .5s ease;
+    width: 270px;
+    
+}
 .busqueda{
     background-color: white;
     border-radius: 6px;
@@ -229,6 +233,8 @@ main ul li img{
     justify-content: flex-end;
 }
 
+
+
 .articulo .delivery i{
     color: #39b54a;
     background-color: white;
@@ -244,6 +250,11 @@ main ul li img{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.articulo .delivery i:hover{
+    transition: all.3s ease;
+    transform: rotate(270deg);
 }
 
 .articulo .descripciones {
@@ -271,6 +282,10 @@ main div .articulo{
 
 .copyright{
     padding-left: 50px;
+}
+
+.consejo i:hover{
+    color: gray;
 }
 
 @media(min-width: 361px){
