@@ -7,17 +7,21 @@
 
 .formulario{
     padding: 10px;
+    padding-top: 30px;
     flex-direction: column;
     text-align: center;
     display: flex;
+    width: 320px;
+    margin: auto;
 }
+
 .usuario{
-    width: 400px;
+    width: 100%;
     background-color: white;
     border: none;
     flex-grow: 1;
     font-size: 14px;
-    margin-top: 30px;
+    margin-top: 10px;
     font-family: 'Roboto', sans-serif;
     border-radius: 6px;
     border-color: white;
@@ -25,9 +29,25 @@
     align-items: center;
     text-align: center;
 }
-.boton {
+
+.contraseña{
+    width: 100%;
+    background-color: white;
+    border: none;
+    flex-grow: 1;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 6px;
+    border-color: white;
+    padding: 8px;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.boton{
     color: white;
-    width: 400px;
+    width: 100%;
     border: none;
     flex-grow: 1;
     font-size: 14px;
@@ -36,14 +56,20 @@
     padding: 6px;
     margin-top: 25px;
 }
+
+.boton.borrar{
+    margin-top: 10px;
+}
+
 .texto{
     font-size: 15px;
     font-weight: bold;
     display: block;
     margin-top:30px;
+    text-align: left;
 }
 .fecha-nacimiento{
-    width: 400px;
+    width: 100%;
     margin: auto;
     background-color: white;
     border: none;
@@ -61,6 +87,24 @@
 .eleccion{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     margin: auto;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.eleccion .interes{
+    margin: 5px 0px;
+}
+
+.eleccion .interes label{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+
+@media (min-width: 769px){
+    .formulario {
+        width: 630px;
+    }
 }

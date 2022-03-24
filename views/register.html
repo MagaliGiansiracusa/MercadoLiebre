@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bienvenidos a Mercado Liebre</title>
         <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/styleRegister.css">
+        <link rel="stylesheet" href="/css/formularios.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         rel="stylesheet" />
 </head>
@@ -46,9 +46,11 @@
 <form class="formulario" action="/register" method="POST">
     <h3 class="enunciado">Formulario de registro a Mercado Liebre</h3>
     <p>
+        <label class="texto" for="nombre">Nombre y apellido</label>
         <input class="usuario" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
     </p>
     <p>
+        <label class="texto" for="usuario">Nombre de usuario</label>
         <input class="usuario" type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
     </p>
     <p>
@@ -56,6 +58,7 @@
         <input class="fecha-nacimiento" type="date" name="nacimiento" id="nacimiento" placeholder="Fecha de nacimiento">
     </p>
     <p>
+        <label class="texto" for="domicilio">Domicilio</label>
         <input class="usuario" type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
     </p>
     <label class="texto" for="perfil">Perfil del usuario</label>
@@ -66,12 +69,27 @@
     </select>
     <p>
         <label class="texto" for="interes">¿En qué está interesado?</label>
-            <section class="eleccion">    
-                <input class="box" type="checkbox" name="interes" value="Electro">Electro 
-                <input class="box" type="checkbox" name="interes" value="Moda">Moda
-                <input class="box" type="checkbox" name="interes" value="Hogar">Hogar
-                <input class="box" type="checkbox" name="interes" value="Juguetería">Juguetería 
-                <input class="box" type="checkbox" name="interes" value="Vida sana">Vida sana
+            <section class="eleccion">
+                <p class="interes">
+                    <input class="box" type="checkbox" name="electro" value="Electro">
+                    <label for="electro">Electro</label>
+                </p>
+                <p class="interes">
+                    <input class="box" type="checkbox" name="moda" value="Moda">
+                    <label for="moda">Moda</label>
+                </p>
+                <p class="interes">
+                    <input class="box" type="checkbox" name="hogar" value="Hogar">
+                    <label for="hogar">Hogar</label>
+                </p>
+                <p class="interes">
+                    <input class="box" type="checkbox" name="jugueteria" value="Juguetería">
+                    <label for="jugueteria">Juguetería</label> 
+                </p>
+                <p class="interes">
+                    <input class="box" type="checkbox" name="vida" value="Vida sana">
+                    <label for="vida">Vida sana</label>
+                </p>
             </section>    
     </p>
     <p>
@@ -87,7 +105,7 @@
         <button class="boton" type="submit">Enviar</button>
     </p>
     <p>
-        <button class="boton" type="reset">Borrar</button>
+        <button class="boton borrar" type="reset">Borrar</button>
     </p>
 </form>
 <footer>
